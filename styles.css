@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-header, footer {
+.header {
   display: -ms-grid;
   display: grid;
   height: 10%;
@@ -14,17 +14,31 @@ header, footer {
   margin: 0 0 1em 0;
 }
 
-footer {
-  margin: 3em 0 0 0;
-}
-
-.large-text {
+.header__text {
   font-size: 6em;
   font-weight: 300;
   font-family: Georgia;
 }
 
-.container {
+.footer {
+  display: -ms-grid;
+  display: grid;
+  height: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  background-color: #ccc;
+  margin: 3em 0 0 0;
+}
+
+.footer__text {
+  font-size: 6em;
+  font-weight: 300;
+  font-family: Georgia;
+}
+
+.article {
   display: -ms-grid;
   display: grid;
   margin: 3% 15%;
@@ -33,11 +47,11 @@ footer {
   font-family: Georgia;
 }
 
-.container div {
+.article__text {
   text-align: center;
 }
 
-.container2 {
+.quotes-section {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -46,13 +60,13 @@ footer {
   grid-gap: 3em;
 }
 
-.container2 div {
+.quotes-section__quote {
   background-color: #aaa;
   padding: 10%;
   text-align: center;
 }
 
-.container2 div:nth-child(odd) {
+.quotes-section__quote:nth-child(odd) {
   background-color: #ccc;
 }
 /*# sourceMappingURL=styles.css.map */

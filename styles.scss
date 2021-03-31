@@ -1,61 +1,63 @@
+// Reset
 body {
   margin: 0;
 }
+// Reset end
 
-header, footer {
+.header {
   display: grid;
   height: 10%;
   align-items: center;
   justify-items: center;
   background-color: #ccc;
   margin: 0 0 1em 0;
+
+  &__text {
+    font-size: 6em;
+    font-weight: 300;
+    font-family: Georgia;
+  }
 }
 
-footer {
+.footer {
+  display: grid;
+  height: 10%;
+  align-items: center;
+  justify-items: center;
+  background-color: #ccc;
   margin: 3em 0 0 0;
+
+  &__text {
+    font-size: 6em;
+    font-weight: 300;
+    font-family: Georgia;
+  }
 }
 
-.large-text {
-  font-size: 6em;
-  font-weight: 300;
-  font-family: Georgia;
-}
-
-.container {
+.article {
   display: grid;
   margin: 3% 15%;
   font-size: 1.5em;
   line-height: 2em;
   font-family: Georgia;
 
-  & div {
+  &__text {
     text-align: center;
   }
 }
 
-.container2 {
+.quotes-section {
   display: grid;
   grid-template-columns: 1fr;
   margin: 5em 8em;
   grid-gap: 3em;
-}
 
-.container2 div {
-  background-color: #aaa;
-  padding: 10%;
-  text-align: center;
-  &:nth-child(odd) {
-    background-color: #ccc;
-  }
-  &:nth-child(1) {
-  }
-  &:nth-child(2) {
-  }
-  &:nth-child(3) {
-  }
-  &:nth-child(4) {
-
-  }
-  &:nth-child(5) {
+  &__quote {
+    background-color: #aaa;
+    padding: 10%;
+    text-align: center;
+    &:nth-child(odd) {
+      background-color: #ccc;
+    }
   }
 }
