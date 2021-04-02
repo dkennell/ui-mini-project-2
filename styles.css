@@ -24,7 +24,7 @@ body {
 .footer {
   display: -ms-grid;
   display: grid;
-  height: 10%;
+  height: 6em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -34,7 +34,7 @@ body {
 }
 
 .footer__text {
-  font-size: 6em;
+  font-size: 4em;
   font-weight: 300;
   font-family: Georgia;
   margin: 0;
@@ -43,7 +43,7 @@ body {
 .article {
   display: -ms-grid;
   display: grid;
-  margin: 3% 15%;
+  margin: 1em 2em;
   font-size: 1.5em;
   line-height: 2em;
   font-family: Georgia;
@@ -58,13 +58,13 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  margin: 5em 8em;
+  margin: 2em;
   grid-gap: 3em;
 }
 
 .quotes-section__quote {
   background-color: #aaa;
-  padding: 10%;
+  padding: 1.5em;
   text-align: center;
 }
 
